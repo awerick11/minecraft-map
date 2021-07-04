@@ -135,6 +135,7 @@ function limitOffset() {
 
 // EVENT LISTENERS
 window.addEventListener("resize", resizeCanvas);
+image.onload = function() { do_render = true };
 document.onwheel = zoomCanvas;
 document.onmousedown = mousedownCanvas;
 document.onmousemove = mousemoveCanvas;
